@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .header div {
+            height: 50px;
+            background-color: #FFA437;
+        }
+        .yellowbox {
+            height: 150px;
+            background-color: #DAEC00;
+        }
+        .bluesection {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .bluebox {
+            height: 100px;
+            background-color: #4A88CF;
+        }
+        .graysection {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .graybox {
+            height: 80px;
+            background-color: #E3E3E3;
+        }
+        @media (min-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .yellowbox {
+                height: 200px;
+            }
+            .bluesection {
+                flex-direction: column;
+            }
+            .bluebox {
+                height: 100px;
+            }
+            .graysection {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .header {
+                flex-direction: row;
+                
+            }
+            .header div{
+                width: 50%;
+            }
+            .yellowbox {
+                height: 250px;
+            }
+            .bluesection {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .bluebox {
+                width: 32%;
+            }
+            .graysection {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .graybox {
+                width: 24%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="yellowbox"></div>
+        <div class="bluesection">
+            <div class="bluebox"></div>
+            <div class="bluebox"></div>
+            <div class="bluebox"></div>
+        </div>
+        <div class="graysection">
+            <div class="graybox"></div>
+            <div class="graybox"></div>
+            <div class="graybox"></div>
+            <div class="graybox"></div>
+        </div>
+    </div>
+</body>
+</html>

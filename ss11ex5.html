@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            gap: 10px;
+            position: relative;
+        }
+        .header .logo {
+            color: #9F4A4B;
+            font-size: 40px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            color: #9F4A4B;
+            cursor: pointer;
+        }
+        .nav {
+            background: #9F4A4B;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        .content {
+            display: flex;
+            gap: 10px;
+        }
+        .main {
+            flex: 2;
+            background: #9F4A4B;
+            color: white;
+            padding: 20px;
+            height: 300px;
+        }
+        .aside {
+            width: 32.85%;
+            background: #9F4A4B;
+            color: white;
+            padding: 20px;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .footer div {
+            background-color: #9F4A4B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (min-width: 481px) {
+            .header {
+                flex-direction: row;
+            }
+            .nav {
+                display: block;
+                width: 100%;
+                margin-left: 0;
+            }
+            .menu-icon {
+                display: none;
+            }
+        }
+        @media (max-width: 480px) {
+            .header {
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            .menu-icon {
+                display: block;
+                flex-direction: row;
+            }
+            .nav {
+                display: block;
+                width: 100%;
+                margin-top: 5px;
+                
+            }
+            .footer {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="menu-icon">&#9776;</div>
+            <div class="nav">#nav</div>
+        </div>
+        <div class="content">
+            <div class="main">#main</div>
+            <div class="aside">#aside</div>
+        </div>
+        <div class="footer">
+            <div>.column1</div>
+            <div>.column2</div>
+            <div>.column3</div>
+            <div>.column4</div>
+            <div>.column5</div>
+            <div>.column6</div>
+        </div>
+    </div>
+</body>
+</html>

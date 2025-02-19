@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+        header {
+            height: 100px;
+            padding: 20px;
+            line-height: 100px;
+            text-align: center;
+            background-color: #B2D6FF;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box1 {
+            background-color: #F5CF8D;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            width: 33.31%;
+        }
+
+        .box2 {
+            background-color:#C8C6FA;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            width: 33.33%;
+        }
+
+        .box3 {
+            background-color:#F09A9D;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            width: 33.33%;
+        }
+
+        .box4 {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: #D7E9FE;
+            width: 100%;
+        }
+
+        .box5 {
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            background-color: rgb(232, 240, 246);
+            width: 100%;
+        }
+
+        @media screen and (max-width:1200px) {
+            .box1 {
+                background-color: #F5CF8D;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                width: 50%;
+                order: 3;
+            }
+
+            .box2 {
+                background-color: #C8C6FA;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                width: 50%;
+                order: 5;
+            }
+
+            .box3 {
+                background-color: #F09A9D;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                width: 50%;
+                order: 4;
+            }
+
+            .box4 {
+                height: 200px;
+                line-height: 100px;
+                text-align: center;
+                background-color: #D7E9FE;
+                width: 50%;
+                order: 2;
+            }
+
+            .box5 {
+                height: 300px;
+                line-height: 300px;
+                text-align: center;
+                background-color: rgb(197, 200, 202);
+                width: 100%;
+                order: 1;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .box1 {
+                background-color: #F5CF8D;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                width: 100%;
+                order: 3;
+            }
+
+            .box2 {
+                background-color: #C8C6FA;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                width: 100%;
+                order: 5;
+            }
+
+            .box3 {
+                background-color: #F09A9D;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                width: 100%;
+                order: 4;
+            }
+
+            .box4 {
+                height: 200px;
+                line-height: 100px;
+                text-align: center;
+                background-color: #D7E9FE;
+                width: 100%;
+                order: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <section>
+        <div class="box1">FEATURE</div>
+        <div class="box2">FEATURE</div>
+        <div class="box3">FEATURE</div>
+        <div class="box4">SIGN UP</div>
+        <div class="box5">CONTENT</div>
+    </section>
+</body>
+
+</html>
